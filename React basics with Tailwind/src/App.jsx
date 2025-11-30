@@ -1,42 +1,8 @@
-import MyCompoonent from "./MyComponent";
-
-const Title = () => {
-  return <div>Hello World</div>;
-};
-
-const Description = () => {
-  return <div>Another component</div>;
-};
-
-const Message = (props) => {
-  const { text, bgColor } = props;
-  return (
-    <div
-      style={{
-        backgroundColor: bgColor,
-      }}
-    >
-      {text}
-    </div>
-  );
-};
-
-const Box = (props) => {
-  const { label, bgColor, fontColor, large } = props;
-  // console.log(large);
-
-  return (
-    <div
-      style={{
-        backgroundColor: bgColor,
-        color: fontColor,
-        fontSize: large ? "40px" : "12px",
-      }}
-    >
-      {label}
-    </div>
-  );
-};
+import Title from "./Title.jsx";
+import Description from "./Description.jsx";
+import Message from "./Message.jsx";
+import Box from "./Box.jsx";
+import MyCompoonent from "./MyComponent.jsx";
 
 const App = () => {
   return (
