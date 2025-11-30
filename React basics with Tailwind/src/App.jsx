@@ -1,3 +1,5 @@
+import MyCompoonent from "./MyComponent";
+
 const Title = () => {
   return <div>Hello World</div>;
 };
@@ -69,6 +71,14 @@ const App = () => {
         fontColor="purple"
         // large will be undefined
       />
+      <br />
+      {/* My Component */}
+      <MyCompoonent bgColor="yellow" height={90}>
+        Hello
+      </MyCompoonent>
+      <MyCompoonent bgColor="lavender" height={40}>
+        Bye
+      </MyCompoonent>
     </div>
   );
 };
